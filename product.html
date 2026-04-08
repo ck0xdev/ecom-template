@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Flowers | BloomWire</title>
+    <meta name="description" content="Browse our complete collection of handcrafted pipe-cleaner flowers. Single stems, bouquets, and custom arrangements — all made by hand.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="glass-nav">
+        <a href="index.html" class="logo">BloomWire</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="product.html" class="active">Shop</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            
+        </div>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <span class="section-tag">The Collection</span>
+        <h1>Our Flowers</h1>
+        <p>Every stem is a tiny work of art. Browse our handcrafted pipe-cleaner blooms.</p>
+    </section>
+
+    <!-- Products -->
+    <section class="section" style="padding-top: 40px;">
+        <div class="container">
+            <div class="products-toolbar reveal">
+                <div class="filter-chips">
+                    <button class="chip active" data-category="all" onclick="filterCategory('all', event)">All</button>
+                    <button class="chip" data-category="Single" onclick="filterCategory('Single', event)">Single Stems</button>
+                    <button class="chip" data-category="Bouquet" onclick="filterCategory('Bouquet', event)">Bouquets</button>
+                    <button class="chip" data-category="Custom" onclick="filterCategory('Custom', event)">Custom</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search flowers..." oninput="handleSearch(this.value)">
+                </div>
+            </div>
+            <section class="product-grid" id="productGrid"></section>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section">
+        <div class="container">
+            <div class="newsletter-section reveal">
+                <h2>Never Miss a Bloom</h2>
+                <p>Subscribe for exclusive drops, seasonal picks, and member-only discounts.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">BloomWire</span>
+                    <p>Handcrafted pipe-cleaner flowers for modern spaces. Made with love in Surat, India.</p>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Pinterest">📌</a>
+                        <a href="#" title="WhatsApp">💬</a>
+                        <a href="#" title="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="product.html">All Products</a>
+                    <a href="product.html">Single Stems</a>
+                    <a href="product.html">Bouquets</a>
+                    <a href="product.html">Custom Orders</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="terms.html">Terms & Privacy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="contact.html">Help Center</a>
+                    <a href="faq.html">Shipping Info</a>
+                    <a href="faq.html">Returns</a>
+                    <a href="contact.html">Wholesale</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 BloomWire. All rights reserved. Handcrafted with 💜 in Surat.
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" title="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
